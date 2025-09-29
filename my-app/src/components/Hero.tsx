@@ -15,6 +15,9 @@ export default function Hero() {
           <a href="/contact" className="px-6 py-3 bg-gray-100 text-gray-900 rounded-lg font-semibold border hover:bg-gray-200 transition">
             Contact Us
           </a>
+          <a href="/blog" className="px-6 py-3 bg-green-700 text-white rounded-lg font-semibold hover:bg-green-800 transition">
+            Visit Our Blog
+          </a>
         </div>
       </div>
     </section>
