@@ -1,3 +1,4 @@
+"use client";
 import BlogCreateForm from '@/components/BlogCreateForm';
 import { useState } from 'react';
 
