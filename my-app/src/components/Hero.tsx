@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -9,12 +10,15 @@ export default function Hero() {
           Professional accounting and business advisory services to help your organization thrive.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="/services" className="px-6 py-3 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-800 transition">
+          <Link href="/services" className="px-6 py-3 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-800 transition">
             Explore Services
-          </a>
-          <a href="/contact" className="px-6 py-3 bg-gray-100 text-gray-900 rounded-lg font-semibold border hover:bg-gray-200 transition">
+          </Link>
+          <Link href="/contact" className="px-6 py-3 bg-gray-100 text-gray-900 rounded-lg font-semibold border hover:bg-gray-200 transition">
             Contact Us
-          </a>
+          </Link>
+          <Link href="/blog" className="px-6 py-3 bg-green-700 text-white rounded-lg font-semibold hover:bg-green-800 transition">
+            Visit Our Blog
+          </Link>
         </div>
       </div>
     </section>
