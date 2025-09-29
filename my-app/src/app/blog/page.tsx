@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { getPosts } from '../services/posts';
 import PostCard from '../../components/PostCard';
 
