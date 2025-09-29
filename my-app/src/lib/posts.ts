@@ -1,22 +1,22 @@
-const posts = [
-  {
-    slug: 'first-post',
-    title: 'My First Blog Post',
-    date: '2024-01-01',
-    content: '<p>This is the content of my first blog post. I hope you enjoy it!</p>',
-  },
-  {
-    slug: 'second-post',
-    title: 'My Second Blog Post',
-    date: '2024-01-02',
-    content: '<p>This is the content of my second blog post. I am getting the hang of this!</p>',
-  },
-];
+import { supabase } from '../../lib/supabaseClient';
 
 export async function getPosts() {
-  return posts;
+  const { data, error } = await supabase
+    .from('posts')
+    .select('id, title, slug, excerpt, author, tags, created_at')
+    .order('created_at', { ascending: false });
+
+  if (error) throw error;
+  return data;
 }
 
 export async function getPost(slug: string) {
-  return posts.find((post) => post.slug === slug);
+  const { data, error } = await supabase
+    .from('posts')
+    .select('*')
+    .eq('slug', slug)
+    .single();
+
+  if (error) throw error;
+  return data;
 }
