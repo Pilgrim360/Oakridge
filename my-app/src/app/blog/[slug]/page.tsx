@@ -1,4 +1,4 @@
-import { getPost } from '../../services/posts';
+import { getPost } from '../../../lib/posts';
 
 export default async function PostPage({ params }: { params: { slug: string } }) {
   const { slug } = await params;
