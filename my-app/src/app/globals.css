@@ -21,8 +21,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: theme("colors.gray.950");
+    --foreground: theme("colors.gray.200");
+  }
+
+  html {
+    color-scheme: dark;
   }
 }
 
@@ -92,10 +96,4 @@ a {
 .site-footer {
   background: var(--footer-bg);
   color: var(--footer-text);
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
