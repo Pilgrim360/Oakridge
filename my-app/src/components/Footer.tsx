@@ -4,13 +4,13 @@ import { Linkedin, Twitter, Github } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 border-t">
+    <footer className="bg-white border-t border-gray-200">
       {/* Top Section: Four Columns */}
-      <div className="mx-auto max-w-7xl px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 border-b">
+      <div className="mx-auto max-w-7xl px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-200">
         {/* Overview/About */}
         <div>
           <h3 className="text-lg font-semibold mb-3 text-gray-900">About Oakridge</h3>
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-gray-700">
             Oakridge is a professional accounting firm dedicated to providing expert financial guidance and business solutions for organizations of all sizes.
           </p>
           <div className="flex gap-4 mt-4">
@@ -28,7 +28,7 @@ export default function Footer() {
         {/* Expertise */}
         <div>
           <h3 className="text-lg font-semibold mb-3 text-gray-900">Expertise</h3>
-          <ul className="text-sm text-gray-600 space-y-2">
+          <ul className="text-sm text-gray-700 space-y-2">
             <li>Audit & Assurance</li>
             <li>Tax Consulting</li>
             <li>Business Advisory</li>
@@ -38,7 +38,7 @@ export default function Footer() {
         {/* Resources */}
         <div>
           <h3 className="text-lg font-semibold mb-3 text-gray-900">Resources</h3>
-          <ul className="text-sm text-gray-600 space-y-2">
+          <ul className="text-sm text-gray-700 space-y-2">
             <li><Link href="/blog" className="hover:text-gray-900">Blog</Link></li>
             <li><Link href="/faq" className="hover:text-gray-900">FAQs</Link></li>
             <li><Link href="/case-studies" className="hover:text-gray-900">Case Studies</Link></li>
@@ -48,7 +48,7 @@ export default function Footer() {
         {/* Contact/Links */}
         <div>
           <h3 className="text-lg font-semibold mb-3 text-gray-900">Contact & Legal</h3>
-          <ul className="text-sm text-gray-600 space-y-2">
+          <ul className="text-sm text-gray-700 space-y-2">
             <li><Link href="/contact" className="hover:text-gray-900">Contact Us</Link></li>
             <li><Link href="/privacy" className="hover:text-gray-900">Privacy Policy</Link></li>
             <li><Link href="/terms" className="hover:text-gray-900">Terms of Service</Link></li>
@@ -57,10 +57,10 @@ export default function Footer() {
       </div>
       {/* Bottom Section: Copyright & Links */}
       <div className="mx-auto max-w-7xl px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-sm text-gray-600">
+        <p className="text-sm text-gray-700">
           © {new Date().getFullYear()} Oakridge. All rights reserved.
         </p>
-        <div className="flex gap-6 text-sm text-gray-600">
+        <div className="flex gap-6 text-sm text-gray-700">
           <Link href="/privacy" className="hover:text-gray-900">
             Privacy
           </Link>
