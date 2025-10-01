@@ -38,7 +38,7 @@ export default function SectionTitle({
         </span>
       )}
 
-      <h2 className="mt-3 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
+      <h2 className="mt-3 text-3xl font-bold tracking-tight text-card-text sm:text-4xl md:text-5xl">
         {title}
       </h2>
 
@@ -47,7 +47,7 @@ export default function SectionTitle({
       </div>
 
       {description && (
-        <p className="mt-6 text-lg leading-8 text-gray-600">
+        <p className="mt-6 text-lg leading-8 text-card-text/80">
           {description}
         </p>
       )}

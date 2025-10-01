@@ -1,21 +1,6 @@
 @tailwind base;
 @tailwind components;
 
-@layer components {
-  .btn-primary {
-    @apply flex items-center gap-2 px-4 py-2 bg-brand-blue text-white rounded-md transition;
-  }
-  .btn-primary:hover {
-    @apply bg-brand-blue/90;
-  }
-  .btn-secondary {
-    @apply px-4 py-2 border border-gray-300 rounded-md text-muted transition;
-  }
-  .btn-secondary:hover {
-    @apply bg-gray-100;
-  }
-}
-
 @tailwind utilities;
 
 :root {

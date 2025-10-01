@@ -10,13 +10,13 @@ export default function Services() {
         </p>
         {/* Example service cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-white rounded-lg shadow p-6">
+          <div className="card">
             <h2 className="text-2xl font-semibold mb-2">Service One</h2>
-            <p className="text-gray-700">Description of Service One.</p>
+            <p className="text-card-text">Description of Service One.</p>
           </div>
-          <div className="bg-white rounded-lg shadow p-6">
+          <div className="card">
             <h2 className="text-2xl font-semibold mb-2">Service Two</h2>
-            <p className="text-gray-700">Description of Service Two.</p>
+            <p className="text-card-text">Description of Service Two.</p>
           </div>
         </div>
       </section>

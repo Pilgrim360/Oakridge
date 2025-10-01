@@ -8,11 +8,13 @@ export default function NewBlogPage() {
   return (
     <div className="container mx-auto py-8">
       {success ? (
-        <div className="bg-green-100 text-green-800 p-4 rounded mb-6 text-center font-semibold">
+        <div className="card text-card-text p-4 rounded mb-6 text-center font-semibold">
           Blog post created successfully!
         </div>
       ) : null}
-      <BlogCreateForm onSuccess={() => setSuccess(true)} />
+      <div className="card p-6">
+        <BlogCreateForm onSuccess={() => setSuccess(true)} />
+      </div>
     </div>
   );
 }
