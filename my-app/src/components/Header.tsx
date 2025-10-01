@@ -17,11 +17,11 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm">
+    <header className="sticky top-0 z-50 bg-nav-bg text-nav-text shadow-sm">
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         
         {/* Logo / Brand */}
-        <Link href="/" className="text-xl font-bold text-brand-blue">
+        <Link href="/" className="text-xl font-bold text-nav-text">
           Oakridge
         </Link>
 
@@ -31,7 +31,7 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-gray-700 hover:text-brand-blue transition-colors"
+              className="text-nav-text/90 hover:text-nav-text transition-colors"
             >
               {item.name}
             </Link>
@@ -42,7 +42,7 @@ export default function Header() {
         <div className="hidden md:block">
           <Link
             href="/contact"
-            className="rounded-lg bg-brand-blue px-4 py-2 text-white font-medium hover:bg-brand-gold transition-colors"
+            className="rounded-lg bg-hero-cta px-4 py-2 text-hero-text font-medium hover:bg-hero-cta/90 transition-colors"
           >
             Get Started
           </Link>
@@ -50,7 +50,7 @@ export default function Header() {
 
         {/* Mobile Hamburger */}
         <button
-          className="md:hidden text-gray-700"
+          className="md:hidden text-nav-text"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -59,12 +59,12 @@ export default function Header() {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <nav className="md:hidden bg-white shadow-md px-6 py-4 flex flex-col gap-4">
+        <nav className="md:hidden bg-nav-bg text-nav-text shadow-md px-6 py-4 flex flex-col gap-4">
           {navItems.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-gray-700 hover:text-brand-blue transition-colors"
+              className="text-nav-text/90 hover:text-nav-text transition-colors"
               onClick={() => setIsOpen(false)}
             >
               {item.name}
@@ -72,7 +72,7 @@ export default function Header() {
           ))}
           <Link
             href="/contact"
-            className="rounded-lg bg-brand-blue px-4 py-2 text-white font-medium hover:bg-brand-gold transition-colors text-center"
+            className="rounded-lg bg-hero-cta px-4 py-2 text-hero-text font-medium hover:bg-hero-cta/90 transition-colors text-center"
             onClick={() => setIsOpen(false)}
           >
             Get Started
