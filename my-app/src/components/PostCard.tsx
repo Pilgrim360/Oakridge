@@ -13,9 +13,9 @@ interface PostCardProps {
 export default function PostCard({ post }: PostCardProps) {
   return (
     <Link href={`/blog/${post.slug}`}>
-      <div className="border rounded-lg p-4 hover:shadow-lg transition-shadow">
-        <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
-        <p className="text-gray-500">{post.date}</p>
+      <div className="bg-white border border-brand-light-steel rounded-lg p-4 hover:shadow-lg transition-shadow">
+        <h2 className="text-2xl font-bold mb-2 text-brand-primary">{post.title}</h2>
+        <p className="text-brand-slate">{post.date}</p>
       </div>
     </Link>
   );

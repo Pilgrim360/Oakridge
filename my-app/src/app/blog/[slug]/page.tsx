@@ -9,11 +9,11 @@ export default async function PostPage({ params }: { params: { slug: string } })
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-      <p className="text-gray-500 mb-8">{post.date}</p>
+    <div className="container mx-auto px-4 py-8 bg-brand-off-white">
+      <h1 className="text-4xl font-bold mb-4 text-brand-primary">{post.title}</h1>
+      <p className="text-brand-slate mb-8">{post.date}</p>
       <div
-        className="prose lg:prose-xl"
+        className="prose lg:prose-xl prose-headings:text-brand-primary prose-p:text-brand-charcoal prose-a:text-brand-primary"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
     </div>

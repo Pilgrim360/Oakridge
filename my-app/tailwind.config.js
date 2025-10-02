@@ -9,8 +9,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'brand-blue': '#1e40af', // Professional blue
-        'brand-gold': '#fbbf24', // Gold accent
+        'brand-primary': '#006466',
+        'brand-primary-dark': '#065A60',
+        'brand-slate': '#415161',
+        'brand-charcoal': '#2c3e50',
+        'brand-light-steel': '#E2E7ED',
+        'brand-silver': '#edeff2',
+        'brand-off-white': '#f8f9fb',
       },
     }, // Add custom theme settings here (e.g., colors, fonts) if needed
   },

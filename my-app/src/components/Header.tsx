@@ -21,7 +21,7 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         
         {/* Logo / Brand */}
-        <Link href="/" className="text-xl font-bold text-brand-blue">
+        <Link href="/" className="text-xl font-bold text-brand-primary">
           Oakridge
         </Link>
 
@@ -31,7 +31,7 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-gray-700 hover:text-brand-blue transition-colors"
+              className="text-brand-charcoal hover:text-brand-primary transition-colors"
             >
               {item.name}
             </Link>
@@ -42,7 +42,7 @@ export default function Header() {
         <div className="hidden md:block">
           <Link
             href="/contact"
-            className="rounded-lg bg-brand-blue px-4 py-2 text-white font-medium hover:bg-brand-gold transition-colors"
+            className="rounded-lg bg-brand-primary px-4 py-2 text-white font-medium hover:bg-brand-primary-dark transition-colors"
           >
             Get Started
           </Link>
@@ -50,7 +50,7 @@ export default function Header() {
 
         {/* Mobile Hamburger */}
         <button
-          className="md:hidden text-gray-700"
+          className="md:hidden text-brand-charcoal"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -64,7 +64,7 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-gray-700 hover:text-brand-blue transition-colors"
+              className="text-brand-charcoal hover:text-brand-primary transition-colors"
               onClick={() => setIsOpen(false)}
             >
               {item.name}
@@ -72,7 +72,7 @@ export default function Header() {
           ))}
           <Link
             href="/contact"
-            className="rounded-lg bg-brand-blue px-4 py-2 text-white font-medium hover:bg-brand-gold transition-colors text-center"
+            className="rounded-lg bg-brand-primary px-4 py-2 text-white font-medium hover:bg-brand-primary-dark transition-colors text-center"
             onClick={() => setIsOpen(false)}
           >
             Get Started
