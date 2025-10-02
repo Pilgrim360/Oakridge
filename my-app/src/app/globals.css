@@ -1,4 +1,7 @@
-/* Tailwind base, components, and utilities should be imported via Tailwind's build process. */
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
 
 :root {
   /* Default page backgrounds & text - use Tailwind theme() helper so these
