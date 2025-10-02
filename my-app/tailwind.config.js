@@ -7,7 +7,12 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx,mdx}', // Scans src directory (if used)
   ],
   theme: {
-    extend: {}, // Add custom theme settings here (e.g., colors, fonts) if needed
+    extend: {
+      colors: {
+        'brand-blue': '#1e40af', // Professional blue
+        'brand-gold': '#fbbf24', // Gold accent
+      },
+    }, // Add custom theme settings here (e.g., colors, fonts) if needed
   },
   plugins: [], // Add plugins like @tailwindcss/forms if needed
 }
