@@ -90,7 +90,7 @@ export default function BlogCreateForm({ onSuccess }: BlogCreateFormProps) {
       />
       <button
         type="submit"
-        className="btn-primary px-6 py-2 rounded"
+        className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition"
         disabled={loading}
       >
         {loading ? "Creating..." : "Create Post"}

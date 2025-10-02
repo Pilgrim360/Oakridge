@@ -23,9 +23,9 @@ function formatDate(iso?: string) {
 export default function PostCard({ post }: PostCardProps) {
   return (
     <Link href={`/blog/${post.slug}`}>
-      <div className="card border rounded-lg p-4 hover:shadow-lg transition-shadow">
-        <h2 className="text-2xl font-bold mb-2 text-card-text">{post.title}</h2>
-        <p className="text-card-text/80">{formatDate(post.date)}</p>
+      <div className="border rounded-lg p-4 hover:shadow-lg transition-shadow bg-white">
+        <h2 className="text-2xl font-bold mb-2 text-gray-900">{post.title}</h2>
+        <p className="text-gray-600">{formatDate(post.date)}</p>
       </div>
     </Link>
   );
