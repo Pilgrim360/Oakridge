@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Services() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-brand-off-white">
+    <main className="flex min-h-screen flex-col items-center justify-center p-8">
       <h1 className="text-4xl font-bold mb-6 text-brand-primary">Services</h1>
       <section className="max-w-2xl w-full text-center">
         <p className="text-lg mb-4 text-brand-charcoal">
