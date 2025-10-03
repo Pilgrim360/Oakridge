@@ -17,10 +17,8 @@ module.exports = {
         'brand-silver': '#edeff2',
         'brand-off-white': '#f8f9fb',
         // Semantic colors for backgrounds and text
-        'brand-surface': '#ffffff',        // Light mode background
-        'brand-surface-dark': '#0a0a0a',   // Dark mode background  
-        'brand-text': '#171717',           // Light mode text
-        'brand-text-dark': '#ededed',      // Dark mode text
+        'brand-surface': '#ffffff',        // Background
+        'brand-text': '#171717',           // Text color
       },
     }, // Add custom theme settings here (e.g., colors, fonts) if needed
   },
