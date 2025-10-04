@@ -25,7 +25,7 @@ export default function Overview() {
           <p className="text-brand-charcoal text-lg leading-relaxed">
             Whether you need assistance with regulatory compliance, financial forecasting, cash flow
             management, or strategic tax planning, Oakridge provides the expertise and dedication
-            to support your organization's financial health and growth objectives.
+            to support your organization&apos;s financial health and growth objectives.
           </p>
         </div>
       </div>
