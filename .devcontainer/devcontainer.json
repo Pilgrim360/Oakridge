@@ -10,7 +10,8 @@
     "ms-python.python",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "GitHub.copilot"
+    "GitHub.copilot",
+    "saoudrizwan.claude-dev"
   ],
   "settings": {
     "editor.formatOnSave": true,
