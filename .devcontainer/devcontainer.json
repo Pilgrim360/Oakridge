@@ -1,21 +1,19 @@
 {
-  "name": "General Dev Environment",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/devcontainers-contrib/features/git:1": {},
-    "ghcr.io/devcontainers-contrib/features/node:1": {}
+  "name": "Next.js Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
   },
-  "extensions": [
-    "ms-vscode.cpptools",
-    "ms-python.python",
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    "GitHub.copilot",
-    "saoudrizwan.claude-dev"
-  ],
-  "settings": {
-    "editor.formatOnSave": true,
-    "files.autoSave": "onFocusChange"
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
   },
-  "forwardPorts": [3000, 5000]
+  "forwardPorts": [3000],
+  "postAttachCommand": "npm run dev",
+  "remoteUser": "node"
 }
