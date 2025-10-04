@@ -1,0 +1,20 @@
+{
+  "name": "General Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/git:1": {},
+    "ghcr.io/devcontainers-contrib/features/node:1": {}
+  },
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-python.python",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "GitHub.copilot"
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange"
+  },
+  "forwardPorts": [3000, 5000]
+}
