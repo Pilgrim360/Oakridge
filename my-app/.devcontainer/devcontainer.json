@@ -9,10 +9,12 @@
       "extensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "bradlc.vscode-tailwindcss"
+        "bradlc.vscode-tailwindcss",
+        "kilocode.kilo-code"
       ]
     }
   },
   "forwardPorts": [3000],
+  "postCreateCommand": "npm install",
   "postAttachCommand": "npm run dev"
 }
