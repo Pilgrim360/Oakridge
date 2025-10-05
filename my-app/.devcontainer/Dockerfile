@@ -1,3 +1,4 @@
+
 # Use official Dev Containers Node image (includes apt)
 FROM mcr.microsoft.com/devcontainers/javascript-node:0-20-bookworm
 
@@ -16,6 +17,9 @@ WORKDIR /workspaces/my-app
 # Copy package files and install dependencies
 COPY package*.json ./
 RUN npm install
+
+# Copy the rest of the code
+COPY . .
 
 # Expose the Next.js port
 EXPOSE 3000
