@@ -11,7 +11,10 @@
         "esbenp.prettier-vscode",
         "bradlc.vscode-tailwindcss",
         "kilocode.kilo-code"
-      ]
+      ],
+      "settings": {
+        "chat.defaultParticipant": "kilocode.kilo-code"
+      }
     }
   },
   "forwardPorts": [3000],
