@@ -2,8 +2,9 @@
   "name": "Next.js Dev Container",
   "build": {
     "dockerfile": "Dockerfile",
-    "context": "."
+    "context": ".."
   },
+  "workspaceFolder": "/workspaces/Oakridge/my-app",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -18,6 +19,20 @@
     }
   },
   "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Next.js Dev Server"
+    }
+  },
   "postCreateCommand": "npm install",
-  "postAttachCommand": "npm run dev"
+  "postAttachCommand": "npm run dev",
+  "shutdownAction": "stopContainer",
+  "mounts": [
+    "source=${localWorkspaceFolder}/.next,target=/workspaces/Oakridge/my-app/.next,type=volume",
+    "source=${localWorkspaceFolder}/node_modules,target=/workspaces/Oakridge/my-app/node_modules,type=volume"
+  ],
+  "remoteEnv": {
+    "NEXT_PUBLIC_SUPABASE_URL": "${localEnv:NEXT_PUBLIC_SUPABASE_URL}",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "${localEnv:NEXT_PUBLIC_SUPABASE_ANON_KEY}"
+  }
 }
