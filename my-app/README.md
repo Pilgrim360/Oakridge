@@ -57,6 +57,40 @@ import { supabase } from '@/lib/supabaseClient';
 const { data, error } = await supabase.from('your_table').select('*');
 ```
 
+## Turbopack Configuration Strategy
+
+This project uses a **hybrid approach** to Turbopack configuration for optimal development experience and production stability:
+
+### Current Configuration
+```json
+{
+  "scripts": {
+    "dev": "next dev --turbopack",    // ✅ Enabled for development speed
+    "build": "next build"             // ✅ Disabled for production stability
+  }
+}
+```
+
+### Rationale
+- **Development**: Turbopack provides significantly faster refresh times and better developer experience
+- **Production**: Traditional webpack bundler ensures maximum compatibility and stability for deployments
+
+### Risk Assessment
+- **Development Risk**: Low - Turbopack is stable for development workflows
+- **Production Risk**: High - Turbopack is experimental for production builds and may cause deployment issues
+
+### Monitoring Plan
+- Track [Next.js releases](https://github.com/vercel/next.js/releases) for Turbopack production readiness
+- Periodically test `npm run build` with `--turbopack` flag to monitor improvements
+- Re-evaluate production Turbopack usage when it reaches stable status (expected: Next.js 16+)
+
+### Fallback Strategy
+If production Turbopack issues occur:
+1. Remove `--turbopack` from build script (current configuration)
+2. Test build immediately: `npm run build`
+3. Deploy with stable webpack build
+4. Monitor Turbopack stability for future re-enablement
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
