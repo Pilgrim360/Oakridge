@@ -91,6 +91,27 @@ If production Turbopack issues occur:
 3. Deploy with stable webpack build
 4. Monitor Turbopack stability for future re-enablement
 
+## Performance Optimizations
+
+This project includes essential Next.js optimizations for improved performance and security:
+
+### Image Optimization
+- **WebP/AVIF Support**: Automatic modern image format conversion
+- **Responsive Images**: Optimized sizes for different devices
+- **Future-Ready**: Prepared for Next.js Image component usage
+
+### Performance Enhancements
+- **Gzip Compression**: Enabled for smaller bundle sizes
+- **Build Optimization**: Enhanced compilation and caching
+
+### Security Headers
+- **X-Frame-Options**: Prevents clickjacking attacks
+- **X-Content-Type-Options**: Prevents MIME sniffing
+- **Referrer-Policy**: Controls referrer information
+
+### Configuration
+All optimizations are configured in `next.config.ts` and work transparently with your existing code.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
